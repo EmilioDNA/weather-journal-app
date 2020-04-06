@@ -22,9 +22,9 @@ const handleClick = (e) => {
         const feelings = document.getElementById('feelings').value;
         postData('/add', {temperature: data.main.temp, date: newDate, feelings})
     })
-    .then(
+    .then(() => {
         updateUI()
-    )
+    })
 }
 
 // Async functions 
@@ -41,7 +41,6 @@ const getOpenWeather = async (baseURL, zipCode, key) => {
 }
 
 const postData = async (url = '', data = {}) => {
-    
     const response = await fetch(url, {
         method: 'POST',
         credentials: 'same-origin',
