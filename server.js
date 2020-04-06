@@ -1,5 +1,5 @@
 // Setup empty JS object to act as endpoint for all routes
-projectData = [];
+projectData = {};
 
 // Require Express to run server and routes
 const express = require('express');
@@ -40,7 +40,7 @@ function makeData(request) {
         date: newData.date,
         feelings: newData.feelings 
     }
-    projectData.push(newEntry);
+    projectData = newEntry;
 }
 
 
