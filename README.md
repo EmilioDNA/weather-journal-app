@@ -13,21 +13,18 @@ The example is a Weather Journal app that requires the zip code and feelings fro
 - Cors
 
 To install these packages please run:
-
-'''
+```
 npm install express - to install the Express server
 npm install body-parser - to install Body Parser
 npm install cors - to install Cors
-
-'''
+```
 
 ### Project Structure
-
-'''
+```
 server.js
 website
 - app.js
 - index.html
 - styles.css
 
-'''
+```
